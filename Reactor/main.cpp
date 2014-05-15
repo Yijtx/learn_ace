@@ -39,6 +39,7 @@ ACE_INT32 ACE_TMAIN(ACE_INT32 argc, ACE_TCHAR* argv[])
 		return -1;
 	}
 	accept->handle_close();
+	ACE_DEBUG((LM_DEBUG,"main return!"));
 	return 0;
 }
 
