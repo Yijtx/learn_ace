@@ -1,7 +1,3 @@
-// Ch2.cpp : 定义控制台应用程序的入口点。
-//
-
-#include "stdafx.h"
 #include <ace/Log_Msg.h>
 #include "acceptor.h"
 #include "handle_data.h"
