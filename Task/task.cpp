@@ -113,6 +113,7 @@ int  Counting_Test_Consumer::svc (void)
 
 int ACE_MAIN (int argc, ACE_TCHAR *argv[])
 {  
+        //must the same msg queue
 		ACE_Message_Queue<ACE_MT_SYNCH> queue(2 * 1024 * 1024);  
 
 		Counting_Test_Producer   producer(&queue);//must use the same msg queue.
