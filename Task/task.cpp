@@ -100,6 +100,7 @@ int  Counting_Test_Consumer::svc (void)
 						ACE_DEBUG ((LM_DEBUG, ACE_TEXT ("Consumer get the data: %s.\n"), b->base()));  
 						ACE_DEBUG ((LM_DEBUG, ACE_TEXT ("Consumer get stop msg.\n")));
 						b->release ();  
+
 						consumer++; 
 						break;   
 				}
