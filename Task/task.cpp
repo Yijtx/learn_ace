@@ -82,9 +82,13 @@ class Counting_Test_Consumer : public ACE_Task<ACE_MT_SYNCH>
 int  Counting_Test_Consumer::svc (void)
 {
 		int consumer = 0;
+
 		ACE_Message_Block *b = 0;
+
 		ACE_DEBUG ((LM_DEBUG,  ACE_TEXT ("in consumer svc.\n")));
+
 		ACE_OS::sleep (30);
+
 		while (1)
 		{
 				if (this->getq (b) == -1)
