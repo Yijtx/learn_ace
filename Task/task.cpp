@@ -111,6 +111,7 @@ int  Counting_Test_Consumer::svc (void)
 		}
 
 		ACE_DEBUG ((LM_DEBUG, ACE_TEXT ("Consumer done\n")));
+        //hotfix
 		return 0;
 }
 
