@@ -61,6 +61,7 @@ int Counting_Test_Producer::svc (void)
 				ACE_OS::sleep (1);
 		}
 		ACE_DEBUG ((LM_DEBUG, ACE_TEXT ("Producer done\n")));
+
 		return 0;
 }
 
