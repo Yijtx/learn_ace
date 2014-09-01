@@ -20,12 +20,14 @@ ACE_INT32 Acceptor::open(ACE_UINT16 port)
 ACE_INT32 Acceptor::handle_input(ACE_HANDLE handle)
 {
 	Handle_data  *handle_data = 0;
+
 	ACE_NEW_RETURN(handle_data, Handle_data(reactor()), -1);
 
 	if (acceptor_.accept(handle_data->get_peer()) == -1)
 	{
 		ACE_DEBUG((LM_DEBUG, "accept handle input accept error!\n"));
 		handle_data->handle_close();
+
 		return -1;
 	}
 	else if (handle_data->open() == -1)
