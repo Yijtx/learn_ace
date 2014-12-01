@@ -47,7 +47,10 @@ ACE_INT32 Acceptor::handle_input(ACE_HANDLE handle)
 ACE_INT32 Acceptor::handle_close(ACE_HANDLE handle, ACE_Reactor_Mask mask)
 {
 	acceptor_.close();
+
 	delete this;
+
 	ACE_DEBUG((LM_DEBUG, "accept handle close ok!\n"));
+
 	return 0;
 }
