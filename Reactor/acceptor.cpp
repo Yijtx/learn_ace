@@ -34,6 +34,7 @@ ACE_INT32 Acceptor::handle_input(ACE_HANDLE handle)
 	{
 		ACE_DEBUG((LM_DEBUG, "accept handle input open error!\n"));
 		handle_data->handle_close();
+
 		return -1;
 	}
 	else
