@@ -1,10 +1,10 @@
-#include "stdafx.h"
-#include "ace/SOCK_Stream.h"
-#include "ace/Reactor.h"
-#include "ace/Event_Handler.h"
-#include "ace/Log_Msg.h"
-#include "ace/Timer_Queue.h"
 #include "handle_data.h"
+#include <ace/SOCK_Stream.h>
+#include <ace/Reactor.h>
+#include <ace/Event_Handler.h>
+#include <ace/Log_Msg.h>
+#include <ace/Timer_Queue.h>
+
 
 ACE_INT32 Handle_data::open( )
 {	

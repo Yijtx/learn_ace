@@ -1,7 +1,6 @@
-#include "stdafx.h"
-#include "ace/Log_Msg.h"
 #include "acceptor.h"
 #include "handle_data.h"
+#include <ace/Log_Msg.h>
 
 ACE_INT32 Acceptor::open(ACE_UINT16 port)
 {
