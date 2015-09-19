@@ -66,11 +66,13 @@ int Counting_Test_Producer::svc (void)
 			b->release ();//release the msg block
 			break;
 		}
+
 		produced ++;
 
 		ACE_DEBUG ((LM_DEBUG, ACE_TEXT ("Producer put the data: %s.\n"), b->base()));  
 		ACE_OS::sleep (1);
 	}
+
 	ACE_DEBUG ((LM_DEBUG, ACE_TEXT ("Producer done\n")));
 
 	return 0;
